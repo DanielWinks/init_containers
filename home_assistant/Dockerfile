@@ -4,4 +4,6 @@ LABEL author="Daniel Winks"
 
 RUN apk --no-cache add influxdb mariadb-client curl
 
+COPY rootfs /
+
 CMD ["/bin/ash"]
