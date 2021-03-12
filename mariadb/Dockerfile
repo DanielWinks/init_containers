@@ -4,7 +4,7 @@ LABEL author="Daniel Winks"
 
 RUN apk --no-cache add mariadb-client
 
-COPY ./createdb.sh /createdb.sh
+COPY /mariadb/createdb.sh /createdb.sh
 
 RUN chmod +x /createdb.sh
 
