@@ -4,6 +4,6 @@ LABEL author="Daniel Winks"
 
 ENV GIT_SSH_COMMAND='ssh -oStrictHostKeyChecking=accept-new'
 
-RUN apk --no-cache add git openssh-client
+RUN apk --no-cache add git openssh-client curl
 
 CMD ["/bin/ash"]
